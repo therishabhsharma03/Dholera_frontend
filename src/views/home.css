@@ -1037,7 +1037,7 @@
 
 .home-container-emitence-colab {
   
-    background-image: url("images/whyDholera_1.webp"); /* Add your background image path */
+    background-image: url("/images/dholera--bg.png"); /* Add your background image path */
     background-size: cover; /* Ensures the background image covers the entire container */
     background-position: center;
     background-repeat: no-repeat;
