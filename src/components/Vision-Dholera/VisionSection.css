@@ -1,0 +1,128 @@
+.vision-container {
+    margin:auto;
+    display: flex;
+    height: auto; /* Allow the container to grow dynamically based on content */
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap; /* Ensure content stacks on small screens */
+    padding: 20px;
+    margin-top: 100px;
+    max-width: 80%;
+  }
+  
+  .vision-text-section {
+    flex: 1;
+    padding: 20px;
+    max-width: 70%;
+    text-align: justify; /* Justify text for the entire text section */
+  }
+  
+  .vision-text-section h1 {
+    font-size: 2.5rem;
+    color: gold;
+    margin-bottom: 15px;
+    line-height: 1.2;
+    text-align: center; /* Keep the main heading centered */
+  }
+  
+  .vision-text-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    text-align: center; /* Keep subheadings centered */
+  }
+  
+  .vision-text-section p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: white;
+    text-align: justify; /* Justify paragraph text */
+  }
+  
+  .vision-text-section button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .vision-image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px; /* Add space between text and image */
+  }
+  
+  .vision-building-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px; /* Ensure image doesn't overflow */
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .vision-container {
+      flex-direction: column; /* Stack text and image vertically */
+      padding: 10px;
+    }
+  
+    .vision-text-section {
+      padding: 15px;
+    }
+  
+    .vision-text-section h1 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+  
+    .vision-text-section h2 {
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+  
+    .vision-text-section p {
+      font-size: 0.95rem;
+      margin-bottom: 15px;
+    }
+  
+    .vision-building-image {
+      max-width: 90%; /* Reduce image size on smaller screens */
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .vision-container {
+      flex-direction: column; /* Stack text and image vertically */
+      padding: 10px;
+      margin-top: 10px;
+    }
+  
+    .vision-text-section {
+      padding: 10px;
+      text-align: justify; /* Justify text for smaller screens */
+    }
+  
+    .vision-text-section h1 {
+      font-size: 1.8rem; /* Smaller heading for better fit */
+    }
+  
+    .vision-text-section h2 {
+      font-size: 1.2rem; /* Adjust subheading font size */
+    }
+  
+    .vision-text-section p {
+      font-size: 0.85rem; /* Smaller paragraph font size */
+      margin-bottom: 15px;
+    }
+  
+    .vision-building-image {
+      max-width: 100%; /* Ensure image scales properly */
+      margin-top: 20px; /* Add space between text and image */
+    }
+  }
+  

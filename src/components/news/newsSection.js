@@ -7,17 +7,27 @@ const NewsCarousel = () => {
     {
       title: "New Luxury Apartments Launched",
       description: "Explore premium living spaces in the heart of the city.",
-      image: "https://via.placeholder.com/800x400?text=Luxury+Apartments",
+      image: "images/dholera_3.jpg",
     },
     {
       title: "Real Estate Market Trends 2024",
-      description: "Get insights into the latest market trends and opportunities.",
-      image: "https://via.placeholder.com/800x400?text=Market+Trends",
+      description: "Get insights into the latest market trends ",
+      image: "images/dholera-main.jpeg",
     },
     {
       title: "Smart Homes Revolution",
       description: "Discover how technology is redefining modern living.",
-      image: "https://via.placeholder.com/800x400?text=Smart+Homes",
+      image: "images/emitence_dholera.png",
+    },
+    {
+      title: "Sustainable Living Spaces",
+      description: "Eco-friendly homes for a greener future.",
+      image: "images/lodha-township-emitence3.jpg",
+    },
+    {
+      title: "Affordable Housing Projects",
+      description: "Find affordable yet premium homes near you.",
+      image: "images/kitchen.jpg",
     },
   ];
 
@@ -25,22 +35,42 @@ const NewsCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
     pauseOnHover: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
 
   return (
     <div className="news-carousel">
       <Slider {...settings}>
         {newsUpdates.map((news, index) => (
-          <div key={index} className="carousel-item">
-            <div className="carousel-content">
-              <img src={news.image} alt={news.title} className="carousel-image" />
-              <div className="carousel-text">
-                <h2>{news.title}</h2>
+          <div key={index} className="carousel-card">
+            <div className="card-content">
+              <img src={news.image} alt={news.title} className="card-image" />
+              <div className="card-text">
+                <h3>{news.title}</h3>
                 <p>{news.description}</p>
               </div>
             </div>

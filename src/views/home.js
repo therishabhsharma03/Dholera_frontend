@@ -17,7 +17,7 @@ import WhyDholera from '../components/whyDholera/dholera.js';
 import FeaturesSection from '../components/FeaturesSection/featureSection.js';
 import PropertyMap from '../components/map/map.js';
 import NewsCarousel from '../components/news/newsSection.js';
-
+import VisionTextImageSection  from '../components/Vision-Dholera/visionDholera.js';
 const Home = (props) => {
   const photos = Array.from({ length: 27 }, (_, i) => `images/clients/${i + 1}.jpeg`);
   const history = useHistory();
@@ -67,19 +67,26 @@ const Home = (props) => {
                 to guide you every step of the way. We use advanced tools and deep industry knowledge to offer
                 personalized advice, helping you make informed decisions.
               </p>
+   
             </div>
           </div>
         </div>
       </div>
       <div className="home-features">
         <div className="featuresContainer">
-
+        <h1 className="home-banner-heading heading2">
+            News & Update
+          </h1>
         <NewsCarousel/>
+       
+       
+       
+        
+        <VisionTextImageSection/>
 
 
-          <PhotoCollage photos={photos} />
 
-
+        
 
 
 
@@ -109,8 +116,16 @@ const Home = (props) => {
               ></FeatureCard>
             </div>
           </div> */}
-          <AutoPlayCarousel videos={videos} />
           {/* <PropertyMap/> */}
+        </div>
+      </div>
+      <div className="home-container-emitence-colab">
+        <div className="home-container02">
+
+          <HeroSection />
+          {/* <AutoPlayCarousel videos={videos} /> */}
+          <PhotoCollage photos={photos} />
+          
         </div>
       </div>
 
@@ -128,7 +143,7 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
               </span>
@@ -137,7 +152,7 @@ const Home = (props) => {
                   <span
                     dangerouslySetInnerHTML={{
                       __html: ' ',
-                    }}
+                      }}
                   />
                 </span>
                 <span>
@@ -201,7 +216,7 @@ const Home = (props) => {
               </h1>
 
               <div className="home-container02">
-                <PhotoCollage photos={photos} />
+                {/* <PhotoCollage photos={photos} /> */}
 
               </div>
             </span>
