@@ -1,0 +1,21 @@
+.carousel-container {
+  width: 80%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: gold;
+  font-size: 40px; /* Increase the size of the side buttons */
+}
+
+.slick-dots li button:before {
+  color: gold;
+  font-size: 16px; /* Increase the size of the dots */
+}
+
+.slick-dots li.slick-active button:before {
+  color: goldenrod;
+  font-size: 50px; /* Ensure active dots are the same size */
+}

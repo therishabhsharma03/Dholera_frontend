@@ -1,0 +1,51 @@
+/* Glass effect container */
+.home-container02 {
+    width: 80%;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* Apply blur effect */
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Slight shadow for better contrast */
+    position: relative;
+  }
+  
+  /* Carousel container */
+  .carousel-container {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .carousel-item {
+    min-width: 33.33%; /* Display 3 items at once */
+    transition: transform 0.3s ease;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .carousel-buttons {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .carousel-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  

@@ -1,0 +1,103 @@
+.hero-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: auto; /* Full height of the viewport */
+    position: relative;
+    overflow: hidden;
+    flex-wrap: nowrap; /* Prevent wrapping on smaller screens */
+  }
+  
+  .hero-logo {
+    display: flex;
+    justify-content: flex-end; /* Align logo to the right */
+    flex: 1;
+    opacity: 0;
+    transform: translateX(100%); /* Start off-screen to the right */
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .hero-text {
+    display: flex;
+    justify-content: flex-start; /* Align text to the left */
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-100%); /* Start off-screen to the left */
+    transition: all 0.8s ease-in-out;
+  }
+  
+  .hero-container.scrolled .hero-logo {
+    transform: translateX(0); /* Bring logo into view */
+    opacity: 1;
+  }
+  
+  .hero-container.scrolled .hero-text {
+    transform: translateX(0); /* Bring text into view */
+    opacity: 1;
+  }
+  
+  .hero-logo img {
+    max-width: 50%; /* Scale logo responsively */
+    height: auto;
+    margin-left: auto; /* Push logo to the right */
+    display: block;
+  }
+  
+  .hero-text h1 {
+    font-size: 2rem;
+    text-align: left; /* Align text to the left */
+    margin: 0;
+    font-weight: 500;
+    padding-left: 20px; /* Add some space to the left */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .hero-container {
+      justify-content: space-between; /* Keep logo and text side by side */
+      padding: 15px;
+    }
+  
+    .hero-logo img {
+      max-width: 70%; /* Adjust logo size */
+    }
+  
+    .hero-text h1 {
+      font-size: 1.8rem; /* Adjust text size */
+      padding-left: 10px; /* Adjust padding */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-container {
+      justify-content: space-between; /* Keep items aligned side by side */
+      padding: 10px;
+    }
+  
+    .hero-logo img {
+      max-width: 70%; /* Adjust logo size */
+    }
+  
+    .hero-text h1 {
+      font-size: 1.5rem;
+      padding-left: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-container {
+      justify-content: space-between; /* Keep items aligned side by side */
+      padding: 5px;
+    }
+  
+    .hero-logo img {
+      max-width: 60%; /* Adjust logo size for smaller screens */
+    }
+  
+    .hero-text h1 {
+      font-size: 1.2rem;
+      padding-left: 5px; /* Adjust padding */
+    }
+  }
+  

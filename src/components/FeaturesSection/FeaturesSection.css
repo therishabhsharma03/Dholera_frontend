@@ -1,0 +1,64 @@
+/* Wrapper for all feature cards */
+.features-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: linear-gradient(136deg, #000000, #010733);
+    color: white;
+  }
+  
+  /* Individual Feature Card Styling */
+  .feature-card {
+    flex: 1 1 calc(25% - 20px); /* 4 cards per row by default */
+    max-width: 300px; /* Limit card width */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px); /* Start from below */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Feature Title */
+  .feature-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Feature Description */
+  .feature-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #f1f1f1;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .feature-card {
+      flex: 1 1 calc(33.33% - 20px); /* 3 cards per row */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .feature-card {
+      flex: 1 1 calc(50% - 20px); /* 2 cards per row */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .feature-card {
+      flex: 1 1 100%; /* 1 card per row */
+    }
+  }
+  

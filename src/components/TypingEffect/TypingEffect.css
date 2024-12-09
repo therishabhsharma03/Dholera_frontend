@@ -1,0 +1,71 @@
+.container {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0 10%; /* Add padding on smaller screens */
+    width: 80%;
+  }
+  
+  .text {
+    font-size: 6vw; /* Default font size for larger screens */
+    color: #fff;
+    font-weight: 300; /* Lighter weight for a premium feel */
+    text-align: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    line-height: 1.2; /* Adjust line height for multiple lines */
+    word-wrap: break-word; /* Ensure text breaks to the next line if needed */
+    font-family: 'Arial', sans-serif; /* You can replace this with a custom premium font */
+  }
+  
+  /* Add fade-in when quote is fully displayed */
+  .text.fade-in {
+    opacity: 1;
+  }
+  
+  /* Responsive styles */
+  
+  /* For medium screens (Laptops) */
+  @media screen and (max-width: 1200px) {
+    .text {
+      font-size: 5.5vw; /* Slightly smaller for laptops */
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    .text {
+      font-size: 6vw; /* Increase font size for tablets and smaller laptops */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .text {
+      font-size: 7vw; /* Slightly larger for phones */
+    }
+  }
+  
+  @media screen and (max-width: 400px) {
+    .text {
+      font-size: 8vw; /* Increase font size for smaller phones */
+    }
+  }
+  

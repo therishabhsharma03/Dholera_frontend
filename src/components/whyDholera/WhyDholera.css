@@ -1,0 +1,51 @@
+.why-dholera {
+    background-color: #ffffff;
+    color: #6b5b5b;
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    width: 100%;
+  }
+  
+  .why-dholera h1 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-transform: uppercase;
+  }
+  p{
+    color: rgb(0, 0, 0);
+  }
+  
+  .section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    max-width: 800px;
+  }
+  
+  .text {
+    
+    flex: 1;
+    margin: 0 20px;
+  }
+  
+  .text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .icon {
+    flex-shrink: 0;
+  }
+  
+  .icon img {
+    width: 80px;
+    height: 80px;
+  }
+  
