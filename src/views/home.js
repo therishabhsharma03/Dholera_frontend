@@ -123,6 +123,9 @@ const Home = (props) => {
         <div className="home-container02">
 
           <HeroSection />
+          <h1 className="home-banner-heading heading2 gold">
+                "Emitence: Where Dreams Are Delivered with a Smile "
+              </h1>
           {/* <AutoPlayCarousel videos={videos} /> */}
           <PhotoCollage photos={photos} />
           
