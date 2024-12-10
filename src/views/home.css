@@ -665,7 +665,16 @@
 .goldText {
   color: rgb(251, 224, 74);
 }
+.whyDholeraCanvaBg{
 
+
+  height: 100vh; /* Full height for the viewport */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
 
 .home-banner {
   flex: 0 0 auto;
@@ -1040,6 +1049,20 @@
 .home-container-emitence-colab {
   
     background-image: url("/images/dholera_parallax.jpg"); /* Add your background image path */
+    background-size: cover; /* Ensures the background image covers the entire container */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Parallax effect: Background moves slower than the content */
+    height: 100vh; /* Full height for the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+  }
+  .home-container-emitence-colab1 {
+  
+    background-image: url("/images/Dholera_client.png"); /* Add your background image path */
     background-size: cover; /* Ensures the background image covers the entire container */
     background-position: center;
     background-repeat: no-repeat;

@@ -119,7 +119,7 @@ const Home = (props) => {
           {/* <PropertyMap/> */}
         </div>
       </div>
-      <div className="home-container-emitence-colab">
+      <div className="home-container-emitence-colab1">
         <div className="home-container02">
 
           <HeroSection />
@@ -132,138 +132,18 @@ const Home = (props) => {
         </div>
       </div>
 
-      <div className="home-banner">
-        <div className="bannerContainer home-banner1">
-          <h1 className="home-banner-heading heading2">
-            {t("home_page_empower")}
-          </h1>
-          <span className="home-banner-sub-heading bodySmall">
-            <span>
-              <span className='justify'>
-                We are committed to turning your real estate dreams into reality with unwavering dedication and precision. Our expert team ensures every detail is meticulously handled, providing you with the best possible experience in finding your perfect property. Whether you're buying, selling, or investing, trust Emitenc Realty to guide you every step of the way.
-                {/* {t("home_page_empower_sub")} */}
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                      }}
-                  />
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                      }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-            </span>
-            <span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-            </span>
-          </span>
+      
 
+
+      <div className="home-banner ">
+        <div className='whyDholeraCanvaBg'>
+          <img src="images/investInDholera.png" alt="Why Dholera"  />
         </div>
-      </div>
-
-
-
-
-
-      <div className="home-banner">
-        <div className="bannerContainer home-banner1">
-          <span className="home-banner-sub-heading bodySmall">
-            <span>
-              <h1 className="home-banner-heading heading2 gold">
-                " Emitence: Where Dreams Are Delivered with a Smile "
-              </h1>
-
-              <div className="home-container02">
-                {/* <PhotoCollage photos={photos} /> */}
-
-              </div>
-            </span>
-            <span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-              <span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-                <span>
-                  <span
-                    dangerouslySetInnerHTML={{
-                      __html: ' ',
-                    }}
-                  />
-                </span>
-              </span>
-            </span>
-          </span>
-
-        </div>
+        
       </div>
       <div className="home-photos">
         <h1 className="home-banner-heading heading2">
-          dsfa
+        
         </h1>
         
       </div>

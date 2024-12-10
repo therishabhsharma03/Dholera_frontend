@@ -27,7 +27,7 @@ import BlogPost from './components/blog/BlogPost';
 
 const App = () => {
   // const selectedCrop = 'rice';
-  const validCrops = [`rice`,`wheat`, `kidneybeans`, `barley`,'mothbeans','chickpeas  ','pigeonpeas','maize','mungbean','blackgram','lentil','pomegranate','banana','mango','grapes','watermelon','muskmelon','apple','orange','papaya','coconut','cotton','jute','coffee'];
+ 
   return (
     <div className="App">
       <Router>
@@ -47,12 +47,7 @@ const App = () => {
           <Route path = '/propertydetails' component = {PropertyDetails} />
           <Route path = '/video' component = {VideoPlayer} />
           <Route path = '/policy' component = {Privacy} />
-          {/* <Route path='/"kidneybeans"' component= {Hero cropName={selectedCrop}} /> */}
-          {validCrops.map((crop) => (
-            <Route key={crop} path={`/${crop}`}>
-              <Hero cropName={crop} />
-            </Route>
-          ))}
+         
           <Route component={NotFound} />
         </Switch>
         <Footer />
