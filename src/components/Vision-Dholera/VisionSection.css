@@ -68,8 +68,9 @@
   /* Media Queries for Responsiveness */
   @media (max-width: 768px) {
     .vision-container {
+      max-width: 100%;
       flex-direction: column; /* Stack text and image vertically */
-      padding: 10px;
+      padding: 5px;
     }
   
     .vision-text-section {
@@ -99,9 +100,9 @@
   
   @media (max-width: 480px) {
     .vision-container {
+      max-width: 100%;
       flex-direction: column; /* Stack text and image vertically */
-      padding: 10px;
-      margin-top: 10px;
+      padding: 5px;
     }
   
     .vision-text-section {

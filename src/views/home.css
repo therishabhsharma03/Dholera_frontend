@@ -280,7 +280,7 @@
   /* height: 100vh; */
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
-  border-radius: 100px;
+  border-radius: 25px;
   backdrop-filter: blur(10px); /* Apply blur effect */
   padding: 0px;
   color: white;

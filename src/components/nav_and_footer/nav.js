@@ -67,9 +67,9 @@ const Nav = () => {
                 Projects
                 {dropdownVisible && (
                   <div className="dropdown-menu">
-                    <Link to="/dholera" className="dropdown-item bodySmall">Dholera Ivestments</Link>
-                    <Link to="/mumbai" className="dropdown-item bodySmall">Dholera Homes</Link>
-                    <Link to="/mumbai" className="dropdown-item bodySmall">Connectivity</Link>
+                    <Link to="/" className="dropdown-item bodySmall">Dholera Ivestments</Link>
+                    <Link to="/" className="dropdown-item bodySmall">Dholera Homes</Link>
+                    <Link to="/" className="dropdown-item bodySmall">Connectivity</Link>
                   </div>
                 )}
               </div>
@@ -108,12 +108,12 @@ const Nav = () => {
                     <span className={`dropdown bodySmall buttonFilled_nav ${sticky ? 'sticky' : ''}`} onClick={toggleMobileDropdown}>
                       Projects
                     </span>
-                    {mobileDropdownVisible && (
+                    {/* {mobileDropdownVisible && (
                       <div className="dropdown-menu">
                         <Link to="/dholera" className={`home-nav42 bodySmall buttonFilled_nav ${sticky ? 'sticky' : ''}`} onClick={closeMobileMenu}>Dholera</Link>
                         <Link to="/mumbai" className={`home-nav42 bodySmall buttonFilled_nav ${sticky ? 'sticky' : ''}`} onClick={closeMobileMenu}>Mumbai</Link>
                       </div>
-                    )}
+                    )} */}
                   </div>
                   <Link className={`home-nav42 bodySmall buttonFilled_nav ${sticky ? 'sticky' : ''}`} to="/blog" onClick={closeMobileMenu}>
                     Blogs

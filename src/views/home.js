@@ -85,7 +85,12 @@ const Home = (props) => {
         <VisionTextImageSection/>
 
 
-
+        <div className="home-banner ">
+        <div className='whyDholeraCanvaBg'>
+          <img src="images/investInDholera.png" alt="Why Dholera"  />
+        </div>
+        
+      </div>
         
 
 
@@ -135,12 +140,7 @@ const Home = (props) => {
       
 
 
-      <div className="home-banner ">
-        <div className='whyDholeraCanvaBg'>
-          <img src="images/investInDholera.png" alt="Why Dholera"  />
-        </div>
-        
-      </div>
+     
       <div className="home-photos">
         <h1 className="home-banner-heading heading2">
         

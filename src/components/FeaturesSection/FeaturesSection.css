@@ -5,7 +5,10 @@
     justify-content: center;
     gap: 30px;
     padding: 40px;
-    background: linear-gradient(136deg, #000000, #010733);
+    /* background: linear-gradient(136deg, #000000, #010733); */
+    background: radial-gradient(circle, 
+    rgba(1, 7, 51, 0.9) 30%, /* Dark blue center */
+    rgba(0, 0, 0, 1) 70% /* Black edges merging into background */);
     color: rgb(255, 255, 255);
   }
   
