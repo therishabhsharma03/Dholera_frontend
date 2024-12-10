@@ -1,13 +1,15 @@
 .vision-container {
-    margin:auto;
-    display: flex;
-    height: auto; /* Allow the container to grow dynamically based on content */
-    align-items: flex-start;
-    justify-content: center;
-    flex-wrap: wrap; /* Ensure content stacks on small screens */
-    padding: 20px;
-    margin-top: 100px;
-    max-width: 80%;
+  margin: auto;
+  display: flex;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-top: 100px;
+  max-width: 80%;
+  align-content: stretch;
+
   }
   
   .vision-text-section {

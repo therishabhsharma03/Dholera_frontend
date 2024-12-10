@@ -31,7 +31,8 @@ const VisionTextImageSection = () => {
       </div>
       <div className="vision-image-section">
         <img
-          src="images/about4.png"
+          src="images/dholera_map.jpg"
+          width={"400px"}
           alt="Building"
           className="vision-building-image"
           />
@@ -40,7 +41,7 @@ const VisionTextImageSection = () => {
     <div className="vision-container">
     <div className="vision-image-section">
         <img
-          src="images/about4.png"
+          src="images/dholera_prototype.jpg"
           alt="Building"
           className="vision-building-image"
           />
