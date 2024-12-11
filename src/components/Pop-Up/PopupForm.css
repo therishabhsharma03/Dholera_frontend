@@ -20,16 +20,17 @@ body.unique-popup-active .home-container {
 
 /* Popup Container */
 .unique-popup-container {
-    background: linear-gradient(145deg, #ffffff, #f3f3f3);
+    background: linear-gradient(163deg, #000000, #0d1121);
     padding: 40px;
-    border-radius: 20px;
+    border-radius: 12px;
     width: 90%;
     max-width: 450px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     position: relative;
     font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #333;
+    text-align: left;
+    color: #ffffff;
+    overflow: hidden;
 }
 
 /* Close Button */
@@ -46,21 +47,23 @@ body.unique-popup-active .home-container {
 }
 
 .unique-popup-close:hover {
-    color: #ff7675;
+    color: #002b44;
 }
 
 /* Heading */
 .unique-popup-container h2 {
     font-size: 26px;
-    font-weight: 700;
-    color: #555;
-    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: center;
 }
 
 /* Form Group */
 .unique-form-group {
     margin-bottom: 20px;
-    text-align: left;
+    display: flex;
+    flex-direction: column; /* Stack the label and input */
 }
 
 /* Labels */
@@ -68,19 +71,20 @@ body.unique-popup-active .home-container {
     display: block;
     margin-bottom: 8px;
     font-size: 14px;
-    color: #777;
+    color: #ffffff;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 /* Input Fields */
 .unique-form-group input {
     width: 100%;
-    padding: 12px 15px;
+    padding: 14px 18px;
     border: 1px solid #ddd;
-    border-radius: 12px;
+    border-radius: 8px;
     background: #fafafa;
-    color: #555;
-    font-size: 15px;
+    color: #ffffff;
+    font-size: 16px;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
 
@@ -91,16 +95,16 @@ body.unique-popup-active .home-container {
 .unique-form-group input:focus {
     outline: none;
     border-color: #56ccf2;
-    box-shadow: 0 0 10px rgba(86, 204, 242, 0.4);
+    box-shadow: 0 0 8px rgba(86, 204, 242, 0.4);
 }
 
 /* Submit Button */
 .unique-submit-button {
     width: 100%;
-    padding: 12px;
+    padding: 14px;
     background: linear-gradient(145deg, #56ccf2, #2f80ed);
     border: none;
-    border-radius: 12px;
+    border-radius: 8px;
     color: #fff;
     font-size: 16px;
     font-weight: bold;
@@ -130,6 +134,6 @@ body.unique-popup-active .home-container {
     .unique-form-group input,
     .unique-submit-button {
         font-size: 14px;
-        padding: 10px;
+        padding: 12px;
     }
 }

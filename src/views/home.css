@@ -1265,6 +1265,7 @@ form {
   align-items: center;
   position: relative;
   width: 100%;
+  flex-direction: column;
 }
 
 input {
