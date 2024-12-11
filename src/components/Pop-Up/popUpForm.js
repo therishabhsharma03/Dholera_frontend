@@ -24,7 +24,7 @@
             alert('Form submitted successfully');
 
             const name = document.getElementById('name').value;
-            const email = document.getElementById('number').value;
+            const number = document.getElementById('number').value;
             const message = document.getElementById('message').value;
             try {
 
@@ -66,7 +66,7 @@
                                 />
                             </div>
                             <div className="unique-form-group">
-                                <label htmlFor="email">Phone Number</label>
+                                <label htmlFor="number">Phone Number</label>
                                 <input
                                     type="number"
                                     id="number"
