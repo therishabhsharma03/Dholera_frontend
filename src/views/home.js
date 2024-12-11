@@ -18,6 +18,7 @@ import FeaturesSection from '../components/FeaturesSection/featureSection.js';
 import PropertyMap from '../components/map/map.js';
 import NewsCarousel from '../components/news/newsSection.js';
 import VisionTextImageSection  from '../components/Vision-Dholera/visionDholera.js';
+import FormPopUp from '../components/Pop-Up/popUpForm.js';
 const Home = (props) => {
   const photos = Array.from({ length: 27 }, (_, i) => `images/clients/${i + 1}.jpeg`);
   const history = useHistory();
@@ -37,6 +38,9 @@ const Home = (props) => {
 
 
   return (
+    <div>
+      <FormPopUp/>
+  
     <div className="home-container">
       <div className="home-hero">
         <div className="heroContainer home-hero1">
@@ -148,6 +152,7 @@ const Home = (props) => {
         
       </div>
 
+    </div>
     </div>
   )
 }

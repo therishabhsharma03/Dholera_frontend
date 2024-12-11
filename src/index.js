@@ -23,7 +23,7 @@ import VideoPlayer from './components/videos/youtubeVideo';
 import PropertyDetails from './components/PropertyDetails/propertyDetails';
 import Privacy from './components/Privacy_Policy/Privacy';
 import BlogPost from './components/blog/BlogPost';
-
+import FormPopUp from './components/Pop-Up/popUpForm';
 
 const App = () => {
   // const selectedCrop = 'rice';
@@ -52,6 +52,7 @@ const App = () => {
         </Switch>
         <Footer />
       </Router>
+      {/* <FormPopUp/> */}
     </div>
   );
 };
