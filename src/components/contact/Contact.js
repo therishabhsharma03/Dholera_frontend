@@ -73,12 +73,12 @@ const ContactUs = () => {
           Mumbai (MH)
         </p>
         <h3 className='bodySmall goldText' >Open Hours:</h3>
-        <p>10am–7:30pm</p>
-        <p>(Monday Closed)</p>
+        <p className='bodySmall white'>10am–7:30pm</p>
+        <p className='bodySmall white'>(Monday Closed)</p>
         <h3 className='bodySmall goldText' >Email:</h3>
-        <p>admin@emitencerealty.com</p>
+        <p className='bodySmall white'>admin@emitencerealty.com</p>
         <h3 className='bodySmall goldText'>Call:</h3>
-        <p>+91 91591-55237</p>
+        <p className='bodySmall white'>+91 91591-55237</p>
       </div>
       <div className="contact-form">
         <h3>Name:</h3>
